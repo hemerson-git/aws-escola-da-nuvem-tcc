@@ -2,9 +2,10 @@
   --background-color: #d9d9db;
   --light: #d9d9db;
   --dark: #1e1c1e;
+  --dark-translucent-50: rgb(30 28 30 / 50%);
   --primary: #a2946f;
 
-  --shortest-animation-time: 2s;
+  --shortest-animation-time: 5s;
 }
 
 * {
@@ -114,9 +115,10 @@ nav ul a {
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: bold;
   color: var(--background-color);
+  text-decoration: none;
 }
 
 .my-slider a::before {
@@ -135,7 +137,7 @@ nav ul a {
   position: relative;
   z-index: 1;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .my-slider a span.liquid {
@@ -150,7 +152,7 @@ nav ul a {
 }
 
 .my-slider a:hover .liquid {
-  top: -200%;
+  top: -300%;
 }
 
 .my-slider a span.liquid::before,
@@ -160,13 +162,17 @@ nav ul a {
   width: 200%;
   height: 200%;
   top: 0;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -75%);
+  -webkit-transform: translate(-50%, -75%);
+  -moz-transform: translate(-50%, -75%);
+  -ms-transform: translate(-50%, -75%);
+  -o-transform: translate(-50%, -75%);
 }
 
 .my-slider a span.liquid::before {
   border-radius: 45%;
-  background-color: rgba(20, 20, 20, 1);
+  background-color: rgba(151, 120, 120, 0.575);
   animation: liquidAnimation var(--shortest-animation-time) linear infinite;
   -webkit-animation: liquidAnimation var(--shortest-animation-time) linear
     infinite;
@@ -174,7 +180,8 @@ nav ul a {
 
 .my-slider a span.liquid::after {
   border-radius: 40%;
-  background-color: rgba(20, 20, 20, 0.5);
+  /* background-color: rgba(20, 20, 20, 0.5); */
+  background-color: var(--dark-translucent-50);
   animation: liquidAnimation calc(var(--shortest-animation-time) * 2) linear
     infinite;
   -webkit-animation: liquidAnimation calc(var(--shortest-animation-time) * 2)
