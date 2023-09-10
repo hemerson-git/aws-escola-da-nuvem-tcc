@@ -229,6 +229,22 @@ nav ul a {
   background-color: var(--dark);
 }
 
+#button-container {
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#button-container button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 5px 0 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 @keyframes liquidAnimation {
   from {
     transform: translate(-50%, -75%) rotate(0deg);
