@@ -92,9 +92,10 @@ nav ul a {
   -o-border-radius: 0.5rem;
 }
 
-.my-slider img {
+.my-slider .content > img {
   max-width: 400px;
-  object-fit: container;
+  height: 520px;
+  object-fit: contain;
 }
 
 .my-slider aside {
