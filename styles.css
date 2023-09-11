@@ -8,6 +8,10 @@
   --shortest-animation-time: 5s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +66,47 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   color: var(--dark);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.hero {
+  max-width: 720px;
+}
+
+.hero section {
+  display: flex;
+  min-height: 80vh;
+}
+
+.hero section > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.hero .left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero a {
+  background-color: var(--primary);
+  color: white;
+  padding: 8px 32px;
+  margin-top: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .container {
